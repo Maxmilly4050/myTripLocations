@@ -1,14 +1,15 @@
 import PageNav from "../components/PageNav"
 
-function Products() {
+function PageNotFound() {
     return (
         <>
         <PageNav />
-        <div>
-            Products
-        </div>
+
+        <h2>
+            Page Not Found
+        </h2>
         </>
     )
 }
 
-export default Products
+export default PageNotFound

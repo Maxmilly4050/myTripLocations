@@ -1,9 +1,14 @@
-function Home() {
+import PageNav from "../components/PageNav"
+
+function Homepage() {
     return (
+        <>
+        <PageNav />
         <div>
-            Home
+            Homepage
         </div>
+        </>
     )
 }
 
-export default Home
+export default Homepage
