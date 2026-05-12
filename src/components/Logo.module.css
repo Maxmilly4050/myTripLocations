@@ -1,3 +1,14 @@
 .logo {
+  display: inline-flex;
+  align-items: center;
+}
+
+.logoImage {
   height: 5.2rem;
+  width: auto;
+  transition: transform 0.2s ease;
+}
+
+.logo:hover .logoImage {
+  transform: scale(1.08);
 }
