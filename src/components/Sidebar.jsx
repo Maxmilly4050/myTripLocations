@@ -5,7 +5,7 @@ import Footer from './Footer'
 
 function Sidebar() {
     return (
-        <div className={styles.sideBar}>
+        <div className={styles.sidebar}>
             <Logo />
             <AppNav />
             <p>List of cities</p>
