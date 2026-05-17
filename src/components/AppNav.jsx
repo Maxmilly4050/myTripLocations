@@ -7,16 +7,10 @@ function AppNav() {
             <nav className={styles.nav}>
                 <ul>
                     <li>
-                        <NavLink to="/">Home</NavLink>
+                        <NavLink to="cities">Cities</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/pricing">Pricing</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/product">Product</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/about">Log out</NavLink>
+                        <NavLink to="countries">Countries</NavLink>
                     </li>
                 </ul>
             </nav>
