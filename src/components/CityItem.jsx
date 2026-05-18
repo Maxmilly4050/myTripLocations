@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import styles from './CityItem.module.css'
 
 function CityItem({ city }) {
@@ -10,11 +11,13 @@ function CityItem({ city }) {
     }
 
     return (
-        <li className={styles.cityItem}>
-            <span>{city.emoji}</span>
-            <h3 className={styles.name}>{city.name}</h3>
-            <time className={styles.date}>{formatDate(city.date)}</time>
-            <button className={styles.deleteBtn}>&times;</button>
+        <li>
+            <Link to={`${city.id}`} className={styles.cityItem}>
+                <span>{city.emoji}</span>
+                <h3 className={styles.name}>{city.name}</h3>
+                <time className={styles.date}>{formatDate(city.date)}</time>
+                <button className={styles.deleteBtn}>&times;</button>
+            </Link>
         </li>
     )
 }
