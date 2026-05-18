@@ -47,7 +47,6 @@ function App() {
           <Route index element={< CityList cities={cities} isLoading={isLoading} />} />
             <Route path='cities' element={<CityList cities={cities} isLoading={isLoading} />} />
             <Route path='countries' element={<CountriesList cities={cities} isLoading={isLoading} />} />
-            <Route path='form' element={<h1>Form</h1>} />
             <Route path='cities/:id' element={<City />} />
             <Route path='form' element={<Form />} />
           </Route>
