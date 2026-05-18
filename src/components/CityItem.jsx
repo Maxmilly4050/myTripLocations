@@ -12,7 +12,7 @@ function CityItem({ city }) {
 
     return (
         <li>
-            <Link to={`${city.id}`} className={styles.cityItem}>
+            <Link to={`${city.id}?lat=${city.position.lat}&lng=${city.position.lng}`} className={styles.cityItem}>
                 <span>{city.emoji}</span>
                 <h3 className={styles.name}>{city.name}</h3>
                 <time className={styles.date}>{formatDate(city.date)}</time>
